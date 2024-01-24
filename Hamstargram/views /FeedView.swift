@@ -10,16 +10,14 @@ import SwiftUI
 struct Feedview: View {
     @State private var model = FeedModel()
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            if model.isLoading {
+                ProgressView()
+            } else {Text("Finish loading!")}
+        }
             .task {
                  try? await model.loadFeed()
-                VStack{
-                    if model.isLoading{
-                        ProgressView()
-                    } else {
-                        Text("Finish loading!")
-                    }
-                }
+              
             }
     }
 }

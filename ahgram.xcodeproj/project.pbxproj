@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F44D1CA62B6180BB00539F98 /* userModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44D1CA52B6180BB00539F98 /* userModel.swift */; };
+		F44D1CA82B6181F900539F98 /* postModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44D1CA72B6181F900539F98 /* postModel.swift */; };
 		F4B3AEC02B614D6100021362 /* HamstargramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B3AEBF2B614D6100021362 /* HamstargramApp.swift */; };
 		F4B3AEC22B614D6100021362 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B3AEC12B614D6100021362 /* ContentView.swift */; };
 		F4B3AEC42B614D6200021362 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B3AEC32B614D6200021362 /* Assets.xcassets */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F44D1CA52B6180BB00539F98 /* userModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userModel.swift; sourceTree = "<group>"; };
+		F44D1CA72B6181F900539F98 /* postModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postModel.swift; sourceTree = "<group>"; };
 		F4B3AEBC2B614D6100021362 /* Hamstargram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hamstargram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B3AEBF2B614D6100021362 /* HamstargramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamstargramApp.swift; sourceTree = "<group>"; };
 		F4B3AEC12B614D6100021362 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -156,6 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				F4B3AEF32B61552800021362 /* FeedModel.swift */,
+				F44D1CA52B6180BB00539F98 /* userModel.swift */,
+				F44D1CA72B6181F900539F98 /* postModel.swift */,
 			);
 			path = modles;
 			sourceTree = "<group>";
@@ -247,7 +253,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F4B3AEB72B614D6100021362 /* Build configuration list for PBXProject "Hamstargram" */;
+			buildConfigurationList = F4B3AEB72B614D6100021362 /* Build configuration list for PBXProject "ahgram" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -300,7 +306,9 @@
 			files = (
 				F4B3AEED2B61500C00021362 /* UserData.swift in Sources */,
 				F4B3AEF92B615E8C00021362 /* Feedview.swift in Sources */,
+				F44D1CA62B6180BB00539F98 /* userModel.swift in Sources */,
 				F4B3AEF42B61552800021362 /* FeedModel.swift in Sources */,
+				F44D1CA82B6181F900539F98 /* postModel.swift in Sources */,
 				F4B3AEF12B6153F000021362 /* FeedData.swift in Sources */,
 				F4B3AEEF2B6150E800021362 /* PostData.swift in Sources */,
 				F4B3AEC22B614D6100021362 /* ContentView.swift in Sources */,
@@ -616,7 +624,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F4B3AEB72B614D6100021362 /* Build configuration list for PBXProject "Hamstargram" */ = {
+		F4B3AEB72B614D6100021362 /* Build configuration list for PBXProject "ahgram" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F4B3AEDF2B614D6300021362 /* Debug */,
