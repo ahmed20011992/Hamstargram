@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct FeedData: Decodable{
+    let users: [UserData]
+    let post: [PostData]
+    
+}

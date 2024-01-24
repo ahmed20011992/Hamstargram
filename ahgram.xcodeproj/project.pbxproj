@@ -14,6 +14,11 @@
 		F4B3AED22B614D6300021362 /* HamstargramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B3AED12B614D6300021362 /* HamstargramTests.swift */; };
 		F4B3AEDC2B614D6300021362 /* HamstargramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B3AEDB2B614D6300021362 /* HamstargramUITests.swift */; };
 		F4B3AEDE2B614D6300021362 /* HamstargramUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B3AEDD2B614D6300021362 /* HamstargramUITestsLaunchTests.swift */; };
+		F4B3AEED2B61500C00021362 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B3AEEC2B61500C00021362 /* UserData.swift */; };
+		F4B3AEEF2B6150E800021362 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B3AEEE2B6150E800021362 /* PostData.swift */; };
+		F4B3AEF12B6153F000021362 /* FeedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B3AEF02B6153F000021362 /* FeedData.swift */; };
+		F4B3AEF42B61552800021362 /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B3AEF32B61552800021362 /* FeedModel.swift */; };
+		F4B3AEF92B615E8C00021362 /* Feedview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B3AEF82B615E8C00021362 /* Feedview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,11 @@
 		F4B3AED72B614D6300021362 /* HamstargramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HamstargramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B3AEDB2B614D6300021362 /* HamstargramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamstargramUITests.swift; sourceTree = "<group>"; };
 		F4B3AEDD2B614D6300021362 /* HamstargramUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamstargramUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F4B3AEEC2B61500C00021362 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		F4B3AEEE2B6150E800021362 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		F4B3AEF02B6153F000021362 /* FeedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedData.swift; sourceTree = "<group>"; };
+		F4B3AEF32B61552800021362 /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
+		F4B3AEF82B615E8C00021362 /* Feedview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +105,9 @@
 		F4B3AEBE2B614D6100021362 /* Hamstargram */ = {
 			isa = PBXGroup;
 			children = (
+				F4B3AEF52B615D1000021362 /* views  */,
+				F4B3AEF22B61550900021362 /* modles */,
+				F4B3AEEB2B614FC100021362 /* Data */,
 				F4B3AEBF2B614D6100021362 /* HamstargramApp.swift */,
 				F4B3AEC12B614D6100021362 /* ContentView.swift */,
 				F4B3AEC32B614D6200021362 /* Assets.xcassets */,
@@ -127,6 +140,32 @@
 				F4B3AEDD2B614D6300021362 /* HamstargramUITestsLaunchTests.swift */,
 			);
 			path = HamstargramUITests;
+			sourceTree = "<group>";
+		};
+		F4B3AEEB2B614FC100021362 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F4B3AEEC2B61500C00021362 /* UserData.swift */,
+				F4B3AEEE2B6150E800021362 /* PostData.swift */,
+				F4B3AEF02B6153F000021362 /* FeedData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F4B3AEF22B61550900021362 /* modles */ = {
+			isa = PBXGroup;
+			children = (
+				F4B3AEF32B61552800021362 /* FeedModel.swift */,
+			);
+			path = modles;
+			sourceTree = "<group>";
+		};
+		F4B3AEF52B615D1000021362 /* views  */ = {
+			isa = PBXGroup;
+			children = (
+				F4B3AEF82B615E8C00021362 /* Feedview.swift */,
+			);
+			path = "views ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +298,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4B3AEED2B61500C00021362 /* UserData.swift in Sources */,
+				F4B3AEF92B615E8C00021362 /* Feedview.swift in Sources */,
+				F4B3AEF42B61552800021362 /* FeedModel.swift in Sources */,
+				F4B3AEF12B6153F000021362 /* FeedData.swift in Sources */,
+				F4B3AEEF2B6150E800021362 /* PostData.swift in Sources */,
 				F4B3AEC22B614D6100021362 /* ContentView.swift in Sources */,
 				F4B3AEC02B614D6100021362 /* HamstargramApp.swift in Sources */,
 			);
