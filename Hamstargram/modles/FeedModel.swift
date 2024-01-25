@@ -32,7 +32,11 @@ class FeedModel{
         let (data, _) = try await URLSession.shared.data(from: url)
         do {
             let feed = try JSONDecoder().decode(FeedData.self, from: data)
-            users = feed.users.map { UserModel (user: $0, baseUrl: baseUrl) }
+            users = feed.users.map { UserModel(user: $0, baseUrl: baseUrl) }
+            users = feed.users.map { user in
+                return UserModel(user: user, baseUrl: baseUrl)
+            }
+
             posts = feed.post.compactMap({ postData in
                 guard let user = getUserById(postData.userId) else {
                     return nil

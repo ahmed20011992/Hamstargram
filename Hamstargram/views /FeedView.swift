@@ -13,7 +13,14 @@ struct Feedview: View {
         VStack{
             if model.isLoading {
                 ProgressView()
-            } else {Text("Finish loading!")}
+            } else {
+                List{
+                    ForEach(model.posts)
+                    { post in
+                        AsyncImage(url: post.imageUrl)
+                    }
+                }
+            }
         }
             .task {
                  try? await model.loadFeed()

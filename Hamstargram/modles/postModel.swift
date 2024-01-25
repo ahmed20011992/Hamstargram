@@ -9,7 +9,8 @@ import Foundation
 import Observation
 
 @Observable
-class PostModel {
+class PostModel: Identifiable {
+    let id = UUID().uuidString
     let user: UserModel
     let description: String
     let imageUrl: URL?
